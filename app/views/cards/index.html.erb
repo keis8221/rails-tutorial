@@ -1,0 +1,17 @@
+<!-- app/views/cards/index.html.erb -->
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Area</th>
+  </tr>
+  <% @cards.each_with_index do |card, i| %>
+    <tr>
+      <td><%= card.id %></td>
+      <td><%= card.width %></td>
+      <td><%= card.height %></td>
+      <td><%= @areas[i] %></td>
+    </tr>
+  <% end %>
+</table>
